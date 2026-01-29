@@ -3,22 +3,14 @@ using namespace std;
 
 int main() {
     int num;
-    char choice;
+    cout << "Enter a number: ";
+    cin >> num;
 
-    do {
-        cout << "Enter a number: ";
-        cin >> num;
-
-        if (num % 2 == 0) {
-            cout << "The number is Even." << endl;
-        } else {
-            cout << "The number is Odd." << endl;
-        }
-
-        cout << "Do you want to check another number? (y/n): ";
-        cin >> choice;
-
-    } while (choice == 'y' || choice == 'Y');
+    if (num % 2 == 0) {
+        cout << num << " is an Even number." << endl;
+    } else {
+        cout << num << " is an Odd number." << endl;
+    }
 
     return 0;
 }
